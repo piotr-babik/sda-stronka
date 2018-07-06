@@ -6,9 +6,4 @@ import { Component, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  @Output() navi: EventEmitter<string> = new EventEmitter();
-
-  navigate(name: string) {
-    this.navi.emit(name);
-  }
 }

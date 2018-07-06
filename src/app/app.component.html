@@ -1,8 +1,4 @@
-<app-navbar (navi)= "selectView($event)"></app-navbar>
-<div [ngSwitch]="currentViewName">
-    <app-home-view *ngSwitchCase="'home'" ></app-home-view>
-    <app-contact-view *ngSwitchCase="'contact'"></app-contact-view>
-    <app-portfolio-view *ngSwitchCase="'portfolio'"></app-portfolio-view>
-</div>
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
 <app-footer></app-footer>
 

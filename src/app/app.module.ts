@@ -7,6 +7,7 @@ import { ContactViewComponent } from './views/contact-view/contact-view.componen
 import { PortfolioViewComponent } from './views/portfolio-view/portfolio-view.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -15,10 +16,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ContactViewComponent,
     PortfolioViewComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
