@@ -8,6 +8,7 @@ import { PortfolioViewComponent } from './views/portfolio-view/portfolio-view.co
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
+import { LoginViewComponent } from './views/login-view/login-view.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { AppRoutingModule } from './app-routing.module';
     PortfolioViewComponent,
     FooterComponent,
     NavbarComponent,
+    LoginViewComponent,
   ],
   imports: [
     BrowserModule,
