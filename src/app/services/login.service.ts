@@ -9,6 +9,10 @@ export class LoginService {
     localStorage.pass = pass;
   }
 
+  getUserLogin() {
+    return localStorage.email;
+  }
+
   logout(): void {
     delete localStorage.email;
     delete localStorage.pass;
