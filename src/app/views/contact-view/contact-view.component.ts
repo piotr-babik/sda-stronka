@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginService } from '../../services/login.service';
 
 @Component({
   selector: 'app-contact-view',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactViewComponent implements OnInit {
 
-  constructor() { }
+  formData;
+
+  constructor(loginService: LoginService) { 
+    this.formData = {
+      email: loginService.getUserLogin(),
+      interests: [
+        "angular",
+        "kawa"
+      ]
+    };
+  }
 
   ngOnInit() {
   }
 
+  submitContactForm() {
+    console.log(this.formData);
+  }
 }
